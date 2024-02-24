@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "nqrduck-module"
 version = "0.0.1"
 authors = [
-  { name="$YOUR_NAME$", email="$YOUR_EMAIL$" },
+  { name="YOUR_NAME", email="YOUR@EMAIL.cool" },
 ]
 
 description = "A template for nqrduck modules."
