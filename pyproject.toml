@@ -4,12 +4,12 @@ build-backend = "hatchling.build"
 
 [project]
 name = "nqrduck-module"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
-  { name="YOUR_NAME", email="YOUR@EMAIL.cool" },
+  { name="jupfi", email="support@nqrduck.cool" },
 ]
 
-description = "A template for nqrduck modules."
+description = "A template for nqrduck modules. Also used for testing."
 readme = "README.md"
 license = { file="LICENSE" }
 requires-python = ">=3.8"
@@ -28,3 +28,28 @@ dependencies = [
 
 [project.entry-points."nqrduck"]
 "nqrduck-module" = "nqrduck_module.module:module"
+
+[tool.ruff]
+exclude = [
+  "widget.py",
+]
+
+[tool.ruff.lint]
+extend-select = [
+  "UP",  # pyupgrade
+  "D",   # pydocstyle
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[project.urls]
+"Homepage" = "https://nqrduck.cool"
+"Bug Tracker" = "https://github.com/nqrduck/nqrduck-module/issues"
+"Source Code" = "https://github.com/nqrduck/nqrduck-module"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/nqrduck_module"]
