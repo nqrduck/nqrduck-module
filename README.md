@@ -33,4 +33,4 @@ Usually the modules are licensed under the MIT License. The license file should 
 
 ## Contributing
 
-If you're interested in contributing to the project, start by checking out our [nqrduck-module template](https://github.com/nqrduck/nqrduck-module). To contribute to existing modules, please first open an issue in the respective module repository to discuss your ideas or report bugs.
+If you're interested in contributing to the project, start by checking out our [nqrduck-module template](https://git.private.coffee/nqrduck/nqrduck-module). To contribute to existing modules, please first open an issue in the respective module repository to discuss your ideas or report bugs.
